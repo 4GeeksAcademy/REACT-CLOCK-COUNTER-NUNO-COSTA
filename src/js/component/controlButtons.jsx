@@ -21,8 +21,8 @@ export default function ControlButtons(props) {
     );
  
     return (
-        <div className="Control-Buttons">
-            <div>{props.active ? ActiveButtons : StartButton}</div>
+        <div className="buttons">
+            <div >{props.active ? ActiveButtons : StartButton}</div>
         </div>
     );
 }

@@ -42,13 +42,14 @@ const Home = () => {
 
 	return (
 		<>
-			<div className="container d-flex">
-				<p>{(Math.floor(time / 1000)) % 10}</p>
-				<p>{(Math.floor(time / 100)) % 10}</p>
-				<p>{(Math.floor(time / 10)) % 10}</p>
-				<p>{(Math.floor(time / 1)) % 10}</p>
+			<div className="mt-5">
+			<div className="container d-flex justify-content-center bg-secondary bg-gradient bg-opacity-75">
+				<p className="text-light" style={{fontSize: "300px"}}>{(Math.floor(time / 1000)) % 10}</p>
+				<p className="text-light" style={{fontSize: "300px"}}>{(Math.floor(time / 100)) % 10}</p>
+				<p className="text-light" style={{fontSize: "300px"}}>{(Math.floor(time / 10)) % 10}</p>
+				<p className="text-light" style={{fontSize: "300px"}}>{(Math.floor(time / 1)) % 10}</p>
 			</div>
-			<div className="container">
+			<div className="container d-flex justify-content-center">
 				<ControlButtons
 					active={isActive}
 					isPaused={isPaused}
@@ -56,6 +57,7 @@ const Home = () => {
 					handlePauseResume={handlePauseResume}
 					handleReset={handleReset}
 				/>
+			</div>
 			</div>
 		</>
 	);

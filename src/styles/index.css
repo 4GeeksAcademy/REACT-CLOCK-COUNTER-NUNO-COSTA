@@ -1,6 +1,22 @@
+body{
+    background-color: black;
+}
+
+.buttons{
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.text{
+    text-align: center;
+    font-size: 50px;
+}
 
 /* 
-
     You can write your own styles here...
     
     
